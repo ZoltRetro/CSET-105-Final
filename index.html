@@ -5,21 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
+
+    <div class="listBox">
+        <h1 class="headerOne">Grocery List</h1>
+        <h3 class="headerTwo">ITEMS</h3>
+        <div class="addingToList">
+            <input type="text" id="add" name="add" placeholder="Type what you want to add and press the button">
+            <button class="addButton" type="button" onclick="addButton()">Add to list</button>
+        </div>
+        <div class="listItems">
+            <ul class="listy">
+
+            </ul>
+            <div class="unpurchased">
+                <button onclick="unpurchased()" id="unpurchasedId">view unpurchased items</button>
+            </div>
+
+
+        </div>
+    </div>
+        <style>
+        .strikethrough {
+        text-decoration: line-through;
+            }
+
+
     
-<style>
-  .strikethrough {
-    text-decoration: line-through;
-  }
-</style>
 
-<button onclick="toggleStrikethrough()" id="my-text">Click the button to toggle this text.</button>
-
-
-
-    
+    </style>
 
     <script src="main.js"></script>
 </body>
