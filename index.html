@@ -7,9 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
+    <div class="listBox">
+        <h1 class="headerOne">Grocery List</h1>
+        <h3 class="headerTwo">UNPURCHASED</h3>
+        <h3 class="headerThree">PURCHASED</h3>
+        <div class="addingToList">
+            <button class="sortButton" type="button" onclick="purchasedListy()">🛒 View Items Left to Purchase →</button>
+            <button class="unSortButton" type="button" onclick="unPurchasedListy()">🛒 View All Purchased Items →</button>
+            <div class="input-container">
+                <span class="leaf-icon">🌱</span>
+                <input
+                    id="add"
+                    type="text"
+                    placeholder="Add a grocery item..."/>
+           
+            <button class="addButton" type="button" onclick="addButton()">
+            
+                <span class="plus">+</span>
+                Add to list
+                
+            </button>
+        </div>
+        <div class="listItems">
+            <ul class="listy">
 
+            </ul>
+        </div>
+        <div class="purchasedItems">
+            <ul class="purchasedThings">
+
+            </ul>
+        </div>
+    </div>
+        <style>
+        .strikethrough {
+        text-decoration: line-through;
+            }
+    </style>
 
     <script src="main.js"></script>
 </body>
